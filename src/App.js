@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./assets/scss/index.scss";
+import Main from "./pages/Main";
+import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";   
+import 'primeflex/primeflex.scss';
+import "./utils/i18n"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-root">
+      <div className="page-content">
+        <BrowserRouter>
+          <Routes>
+            <Route  path="/" element={<Main />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

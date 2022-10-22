@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+  .p-galleria {
+    .p-galleria-content {
+      .p-galleria-item{
+        box-shadow: 1px 1px 5px;
+      }
+    }
+  }
+}

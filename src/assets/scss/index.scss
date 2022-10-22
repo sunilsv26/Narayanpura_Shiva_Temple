@@ -1,0 +1,37 @@
+@import "./colors.scss";
+@import "./comman.scss";
+@import "./navigation.scss";
+@import "./main.scss";
+@import "./home.scss";
+@import "./gallery.scss";
+
+.page-root {
+  width: 100vw;
+  height: 100vh;
+  //background: url("../images//background.jpg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  background: $page-bg4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .page-content {
+    width: 95%;
+    height: 95%;
+    position: fixed;
+    overflow-y: overlay;
+    /*the alpha value controls the transparency*/
+    background: rgba(255, 255, 255, 0.3);
+    /* This controls the blurring effect*/
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    /*Adding the shadow*/
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+    /* Adding our borders*/
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 4;
+    overflow: hidden;
+  }
+}
