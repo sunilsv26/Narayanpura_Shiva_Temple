@@ -1,0 +1,30 @@
+name: Narayanpur Shiva Temple
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.2.0]
+    steps:
+      - uses: actions/checkout@master
+      - name: install, build, and test
+        run: |
+          yarn install
+          yarn lint
+          yarn build
+          yarn test
+        env:
+          CI: true
+      - name: Deploy to production
+        uses: awibox/deploy-to-github-pages-action@master
+        env:
+          AUTHOR: Sunil Sherikar
+          BUILD_PATH: public
+          GITHUB_PAGE_NAME: Narayanpura_Shiva_Temple
+          PA_TOKEN: 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
+          USERNAME: sunilsv26
+          EMAIL: sunilsv26@gmail.com
