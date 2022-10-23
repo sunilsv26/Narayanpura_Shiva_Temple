@@ -2,7 +2,7 @@ name: Narayanpur Shiva Temple
 on:
   push:
     branches:
-      - master
+      - deplyment
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -10,7 +10,7 @@ jobs:
       matrix:
         node-version: [14.2.0]
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@deplyment
       - name: install, build, and test
         run: |
           yarn install
@@ -20,7 +20,7 @@ jobs:
         env:
           CI: true
       - name: Deploy to production
-        uses: shivatemple/deploy-to-github-pages-action@master
+        uses: shivatemple/deploy-to-github-pages-action@deplyment
         env:
           AUTHOR: Sunil Sherikar
           BUILD_PATH: public
