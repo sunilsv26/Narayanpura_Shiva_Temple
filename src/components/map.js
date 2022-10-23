@@ -18,7 +18,7 @@ const Map = () => {
     };
   }, []); */
   return (
-    <div className="col-12">
+    <div className="w-full p-2">
       {/* {googleMapsReady && (
         <GMap options={options} style={{ width: "100%", minHeight: "320px" }} />
       )} */}

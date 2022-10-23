@@ -67,6 +67,7 @@ const Home = () => {
         autoPlay
         showThumbnails={false}
         circular
+        showIndicators
       />
       <div className="col-12 md:col-6">
         <h1>ABOUT</h1>
