@@ -20,11 +20,11 @@ jobs:
         env:
           CI: true
       - name: Deploy to production
-        uses: awibox/deploy-to-github-pages-action@master
+        uses: shivatemple/deploy-to-github-pages-action@master
         env:
           AUTHOR: Sunil Sherikar
           BUILD_PATH: public
-          GITHUB_PAGE_NAME: Narayanpura_Shiva_Temple
+          GITHUB_PAGE_NAME: shivatemple.github.io
           PA_TOKEN: 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
           USERNAME: sunilsv26
           EMAIL: sunilsv26@gmail.com
