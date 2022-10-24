@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Narayanpura_Shiva_Temple/static/css/main.4853bfd6.css",
-    "main.js": "/Narayanpura_Shiva_Temple/static/js/main.5e50a70f.js",
+    "main.js": "/Narayanpura_Shiva_Temple/static/js/main.419658be.js",
     "static/js/787.babc8c6d.chunk.js": "/Narayanpura_Shiva_Temple/static/js/787.babc8c6d.chunk.js",
     "static/media/primeicons.svg": "/Narayanpura_Shiva_Temple/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/primeicons.eot": "/Narayanpura_Shiva_Temple/static/media/primeicons.d44157bdfa026dc877af.eot",
@@ -10,11 +10,11 @@
     "static/media/primeicons.woff2": "/Narayanpura_Shiva_Temple/static/media/primeicons.78172950b335ccdb94e2.woff2",
     "index.html": "/Narayanpura_Shiva_Temple/index.html",
     "main.4853bfd6.css.map": "/Narayanpura_Shiva_Temple/static/css/main.4853bfd6.css.map",
-    "main.5e50a70f.js.map": "/Narayanpura_Shiva_Temple/static/js/main.5e50a70f.js.map",
+    "main.419658be.js.map": "/Narayanpura_Shiva_Temple/static/js/main.419658be.js.map",
     "787.babc8c6d.chunk.js.map": "/Narayanpura_Shiva_Temple/static/js/787.babc8c6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4853bfd6.css",
-    "static/js/main.5e50a70f.js"
+    "static/js/main.419658be.js"
   ]
 }
