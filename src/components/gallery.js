@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Galleria } from "primereact/galleria";
+import GalletyPhotos from "../assets/data/gallery.json";
 
 const Gallery = () => {
-  const [images, setImages] = useState(null);
-  useEffect(() => {
-    const newImages = [];
-    for (let i = 1; i < 53; i++) {
-      newImages.push({
-        itemImageSrc: `http://localhost:3000/gallery/${i}.jpg`,
-        thumbnailImageSrc: `http://localhost:3000/gallery/${i}.jpg`,
-        alt: `Image-${i}`,
-        title: `Image-${i}`,
-      });
-    }
-    setImages(newImages);
-  }, []);
+  const [images, setImages] = useState(GalletyPhotos);
 
   const itemTemplate = (item) => {
     return (

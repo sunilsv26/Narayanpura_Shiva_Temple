@@ -1,21 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Galleria } from "primereact/galleria";
+import HomeImages from "../assets/data/home.json";
 
 const Home = () => {
-  const [images, setImages] = useState(null);
-  useEffect(() => {
-    const newImages = [];
-    for (let i = 1; i < 7; i++) {
-      newImages.push({
-        itemImageSrc: `http://localhost:3000/home/${i}.jpg`,
-        thumbnailImageSrc: `http://localhost:3000/home/${i}.jpg`,
-        alt: `Image-${i}`,
-        title: `Image-${i}`,
-      });
-    }
-    setImages(newImages);
-  }, []);
-
+  const [images, setImages] = useState(HomeImages);
   const responsiveOptions = [
     {
       breakpoint: "1024px",
